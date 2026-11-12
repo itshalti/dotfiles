@@ -1,0 +1,105 @@
+* {
+  font-family: 'Fira Sans SemiBold';
+  background-image: none;
+  box-shadow: none;
+}
+
+window {
+  background-color: rgba(15, 20, 17, 0.95);
+  font-size: 14pt;
+}
+
+button {
+  border-radius: 16px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3c4841;
+  color: #d5c4a1;
+  background-color: #1d2321;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  margin: 8px;
+  padding: 12px;
+  outline-style: none;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+
+button:focus {
+  background-size: 25%;
+  border-color: #3c4841;
+  background-color: #1d2321;
+}
+
+button:hover {
+  background-color: #2a332c;
+  border-color: #689d6a;
+  color: #8ec07c;
+  background-size: 28%;
+  box-shadow: 0 8px 35px rgba(104, 157, 106, 0.3);
+}
+
+#lock {
+  background-image: image(url("icons/lock.png"));
+}
+
+#lock:hover {
+  background-color: #2d3b35;
+  border-color: #689d6a;
+}
+
+#logout {
+  background-image: image(url("icons/logout.png"));
+}
+
+#logout:hover {
+  background-color: #3a3c2d;
+  border-color: #b8bb26;
+  color: #b8bb26;
+  box-shadow: 0 8px 35px rgba(184, 187, 38, 0.3);
+}
+
+#suspend {
+  background-image: image(url("icons/suspend.png"));
+}
+
+#suspend:hover {
+  background-color: #2d3638;
+  border-color: #83a598;
+  color: #83a598;
+  box-shadow: 0 8px 35px rgba(131, 165, 152, 0.3);
+}
+
+#hibernate {
+  background-image: image(url("icons/hibernate.png"));
+}
+
+#hibernate:hover {
+  background-color: #2d3631;
+  border-color: #8ec07c;
+  color: #8ec07c;
+  box-shadow: 0 8px 35px rgba(142, 192, 124, 0.3);
+}
+
+#shutdown {
+  background-image: image(url("icons/shutdown.png"));
+}
+
+#shutdown:hover {
+  background-color: #3b2c28;
+  border-color: #fb4934;
+  color: #fb4934;
+  box-shadow: 0 8px 35px rgba(251, 73, 52, 0.3);
+}
+
+#reboot {
+  background-image: image(url("icons/reboot.png"));
+}
+
+#reboot:hover {
+  background-color: #3b322b;
+  border-color: #fe8019;
+  color: #fe8019;
+  box-shadow: 0 8px 35px rgba(254, 128, 25, 0.3);
+}

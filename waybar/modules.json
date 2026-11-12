@@ -1,0 +1,117 @@
+{
+  "custom/rofi": {
+    "format": "\uf303",
+    "on-click": "pkill rofi || rofi -show drun -replace",
+    "tooltip-format": "Open rofi application launcher"
+  },
+  "clock": {
+    "format": "{:%T}",
+    "on-click": "com.ml4w.calendar",
+    "timezone": "",
+    "tooltip": false,
+    "interval": 1
+  },
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "\uf1eb {essid} ({signalStrength}%)",
+    "format-ethernet": "\udb80\ude00 {ifname}",
+    "format-disconnected": "Disconnected \uf071",
+    "tooltip-format": "{ifname} via {gwaddri}",
+    "tooltip-format-wifi": "{ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFrequency: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": "\udb80\ude00 {ifname}\nIP: {ipaddr}\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "kitty --class nmtui-floating -e nmtui"
+  },
+  "tray": {
+    "spacing": 7
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "\ueee8",
+    "format-source": "\uf130 {volume}%",
+    "format-source-muted": "\uf131",
+    "format-icons": {
+      "headphone": "\uf025",
+      "headset": "\uf025",
+      "handsfree": "\uf025",
+      "car": "\uf1b9",
+      "phone": "\uf095",
+      "hdmi": "\udb82\udc41",
+      "speaker": "\udb81\udcc3",
+      "default": "\uf028"
+    },
+    "on-click": "pwvucontrol"
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": " EN ",
+    "format-ru": " RU "
+  },
+  "custom/notification": {
+    "tooltip-format": "Left: Notifications\nRight: Do not disturb",
+    "format": " {icon} ",
+    "format-icons": {
+      "notification": "󰵙",
+      "none": "󰂚",
+      "dnd-notification": "󰵙",
+      "dnd-none": "󰂚",
+      "inhibited-notification": "󰵙",
+      "inhibited-none": "󰂚",
+      "dnd-inhibited-notification": "󰵙",
+      "dnd-inhibited-none": "󰂚"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "custom/exit": {
+    "format": " off ",
+    "on-click": "wlogout &"
+  },
+  "hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": false,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "I",
+      "2": "II",
+      "3": "III",
+      "4": "IV",
+      "5": "V",
+      "6": "VI",
+      "7": "VII",
+      "8": "VIII",
+      "9": "IX",
+      "10": "X"
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": []
+    },
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1"
+  },
+  "bluetooth": {
+    "format": " {status}",
+    "format-connected": " {device_alias}",
+    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click": "overskride"
+  }
+}

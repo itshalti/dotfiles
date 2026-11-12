@@ -1,0 +1,209 @@
+/* General */
+* {
+  font-family: "JetBrainsMono Nerd Font Propo", monospace;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 0px;
+  box-shadow: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+window#waybar {
+  background: #1d2321;
+  color: #d5c4a1;
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+  transition-property: none;
+}
+
+/* Левая часть - workspaces */
+.modules-left {
+  padding-left: 8px;
+}
+
+/* Правая часть - системные индикаторы */
+.modules-right {
+  padding-right: 8px;
+}
+
+/* Общие модули */
+.module {
+  margin: 0px;
+}
+
+/* Workspaces */
+#workspaces {
+  background: transparent;
+  margin: 0px;
+  padding: 0px;
+}
+
+#workspaces button {
+  background: transparent;
+  color: #504945;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px 8px;
+  min-width: 25px;
+  min-height: 30px;
+  transition: none;
+  box-shadow: 0 0 0 transparent;
+}
+
+#workspaces button.active {
+  background: transparent;
+  color: #8ec07c;
+  border-bottom: 2px solid #8ec07c;
+  box-shadow: 0 0 0 transparent;
+}
+
+#workspaces button:hover {
+  background: rgba(104, 157, 106, 0.1);
+  color: #689d6a;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Rofi/Launcher */
+#custom-rofi {
+  font-size: 16px;
+  color: #b8bb26;
+  background: transparent;
+  padding: 0px 10px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+#custom-rofi:hover {
+  color: #98971a;
+  text-shadow: 0 0 8px rgba(184, 187, 38, 0.5);
+}
+
+/* Clock */
+#clock {
+  color: #d5c4a1;
+  background: transparent;
+  padding: 0px 12px;
+  margin: 0px;
+  min-height: 30px;
+}
+
+/* Network */
+#network {
+  background: transparent;
+  color: #8ec07c;
+  padding: 0px 10px;
+  margin: 0px 6px;
+  min-height: 30px;
+  transition: all 0.3s ease;
+}
+
+#network:hover {
+  text-shadow: 0 0 8px rgba(142, 192, 124, 0.5);
+}
+
+#network.disconnected {
+  color: #fb4934;
+}
+
+/* Pulseaudio */
+#pulseaudio {
+  background: transparent;
+  color: #b8bb26;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  min-height: 30px;
+  transition: all 0.3s ease;
+}
+
+#pulseaudio:hover {
+  text-shadow: 0 0 8px rgba(184, 187, 38, 0.5);
+}
+
+#pulseaudio.muted {
+  color: #fb4934;
+}
+
+/* Bluetooth */
+#bluetooth {
+  background: transparent;
+  color: #689d6a;
+  padding: 0px 10px;
+  margin: 0px 6px;
+  min-height: 30px;
+  transition: all 0.3s ease;
+}
+
+#bluetooth:hover {
+  text-shadow: 0 0 8px rgba(104, 157, 106, 0.5);
+}
+
+#bluetooth.disabled {
+  color: #504945;
+}
+
+/* Tray */
+#tray {
+  background: transparent;
+  padding: 0px 8px;
+  margin: 0px 6px;
+  min-height: 30px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  color: #fb4934;
+}
+
+#tray > * {
+  margin: 0px 5px;
+}
+
+/* Backlight */
+#backlight {
+  background: transparent;
+  color: #b8bb26;
+  padding: 2px 8px;
+  margin: 0px 4px;
+  transition: all 0.3s ease;
+}
+
+#backlight:hover {
+  text-shadow: 0 0 8px rgba(184, 187, 38, 0.5);
+}
+
+/* Notifications */
+#custom-notifications {
+  background: transparent;
+  color: #8ec07c;
+  padding: 0 8px;
+  margin: 0 6px;
+  min-height: 30px;
+  transition: all 0.3s ease;
+}
+
+#custom-notifications:hover {
+  color: #689d6a;
+  text-shadow: 0 0 8px rgba(142, 192, 124, 0.5);
+}
+
+/* Wlogout */
+#custom-wlogout {
+  background: transparent;
+  color: #fb4934;
+  padding: 0 10px;
+  margin: 0 8px;
+  min-height: 30px;
+  transition: all 0.3s ease;
+}
+
+#custom-wlogout:hover {
+  color: #cc241d;
+  text-shadow: 0 0 8px rgba(251, 73, 52, 0.5);
+}

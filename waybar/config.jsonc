@@ -1,0 +1,21 @@
+{
+  // General Settings
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 0,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+
+  // Load modules
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+
+  "modules-left": ["custom/rofi","hyprland/workspaces"],
+  "modules-center": ["hyprland/window"], 
+  "modules-right": ["tray","pulseaudio","hyprland/language","custom/notification","custom/exit","clock"]
+
+}
